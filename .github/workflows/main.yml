@@ -22,7 +22,7 @@ jobs:
 
     - name: Deploy with Helm
       run: |
-        helm upgrade --install my-release ./chart --namespace cookie --create-namespace
+        helm upgrade --install my-release ./chart/my-app --namespace cookie --create-namespace
 
 
 
