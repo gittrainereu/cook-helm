@@ -1,12 +1,11 @@
 name: Example Workflow
 
 on: [push]
-
-env:
-  HANS: 'hello'
-
 jobs:
   example-job:
     runs-on: ubuntu-latest
     steps:
-      - run: echo $HANS
+      - name: Example Step
+        run: echo $HANS
+        env:
+          HANS: 'step-value'
