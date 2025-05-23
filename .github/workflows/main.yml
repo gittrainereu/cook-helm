@@ -24,6 +24,7 @@ jobs:
     - name: Deploy with Helm
       run: |
         helm upgrade --install my-release ./charts/my-app --namespace cookie --create-namespace
+        kubectl -n cookie get all
 
 
 
